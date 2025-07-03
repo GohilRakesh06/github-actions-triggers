@@ -3,7 +3,7 @@ name: workflow for testing different types of triggers
 on: 
   label:
     types:
-      - created:
+      - created
   push:
     branches:
       - main:
