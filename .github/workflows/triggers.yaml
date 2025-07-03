@@ -1,0 +1,15 @@
+name: workflow for testing different types of triggers
+
+on: 
+  label:
+    types:
+      - created:
+  push:
+    branches:
+      - main:
+  jobs:
+    deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: this job triggers when new lable is created in issue 
+          
