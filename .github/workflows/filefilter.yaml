@@ -1,0 +1,12 @@
+name: trigger when sepcific file is pushed
+
+on:
+  push:
+    paths:
+      - '**.js'
+jobs:
+  js_file_pushed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: triggers when .js file is pushed
+        run: echo ".js file uploaded"
