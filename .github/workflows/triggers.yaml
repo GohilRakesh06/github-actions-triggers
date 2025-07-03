@@ -7,9 +7,9 @@ on:
   push:
     branches:
       - main
-  jobs:
-    deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - name: this job triggers when new lable is created in issue 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: this job triggers when new lable is created in issue 
           
