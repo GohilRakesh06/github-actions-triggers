@@ -16,6 +16,7 @@
             § on: [push, fork]
         ○ If multiple triggering events for your workflow occur at the same time, multiple workflow runs will be triggered.
     v Using activity types and filters with multiple events
+        labels only works when issue is created inside workflow code not from github ai 
         For example, a workflow with the following on value will run when:
             • A label is created
             • A push is made to the main branch in the repository
