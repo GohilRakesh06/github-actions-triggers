@@ -13,4 +13,10 @@ jobs:
     steps:
       - name: this job triggers when new lable is created in issue
         run: echo "triggerd" 
-          
+jobs: 
+  on_lable_created:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print label info
+        run: echo "label added : ${{ github.event.label.name }} to issue #${{ github.event.issue.number }}"
+    
